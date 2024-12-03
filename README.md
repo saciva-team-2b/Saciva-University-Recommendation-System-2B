@@ -29,23 +29,23 @@ Improve decision-making for students by offering insights into academic, geograp
 Simplify the university search process to reduce the stress associated with moving to a new country for education.
 
 **Our Goal:**
-Create an intuitive and user-friendly recommendation engine.
-Address gaps in current solutions by incorporating factors such as climate, cost of living, safety, and networking opportunities in university profiles.
+Create an intuitive and potentially user-friendly recommendation engine.
+Address gaps in current solutions by incorporating factors such as offered classes, cost of living, safety, and networking opportunities in university profiles.
 Foster community building among international students by aligning preferences with university characteristics.
 
 ## Methodology
 
 **Data Collection:**
-Data was collected from diverse sources to create comprehensive university and student profiles. Factors included rankings, tuition fees, climate, and location, among others.
+Data was collected from diverse sources to create comprehensive university and student profiles. Factors included rankings, tuition fees, offered classes, and location, among others.
 
 **Preprocessing:**
 The data was normalized and standardized to ensure uniformity across features. Missing values were imputed, and categorical variables were encoded appropriately.
 
-### Modeling:
+### Modeling
 
 **Clustering:** Used K-means clustering to group universities based on their profiles.
 
-**Nearest Neighbor:** Implemented the K-Nearest Neighbors (KNN) algorithm to find the best matches for students based on their input profile.
+**Nearest Neighbor:** Implemented the K-Nearest Neighbors (KNN) algorithm to find the best matches for students based on an input profile.
 
 **Tools:** The system was developed using Python with libraries like scikit-learn, pandas, and numpy for data manipulation and modeling.
 
@@ -60,23 +60,22 @@ The system receives a student profile as input, vectorizes it, and computes the 
 
 **Performance Metrics:**
 
-- Accuracy of matching criteria: ~85%
-- Average Distance Score: Reduced by 15% compared to baseline models.
+- With an unsupervised clustering model and no initial student preference data, it is difficult to test the model's empirical accuracy, however we have found that running values on what might be believed to represent a student make sense with the recommendations.
 
 **Insights:**
 
-- Students prioritized factors like affordability and safety, which were often overlooked in traditional selection methods.
-- Customizing recommendations based on non-academic preferences significantly increased user satisfaction.
+- Students might want to consider factors like affordability and safety, which are often overlooked in traditional selection methods.
+- Customizing recommendations based on non-academic preferences can increase user satisfaction if this model is used in the future.
+- Having more time on this project, we might have employed surveying methods or tried testing other models to get some idea of accuracy.
 
 ## Visualizations
 
 - Clustering Outputs: Graphical representation of university clusters to illustrate groupings.
 - Distance Analysis: Line charts depicting proximity scores for recommended universities.
-- Feature Correlations: Heatmaps showcasing the relationships between key features like cost, location, and safety.
 
 ## Potential Next Steps
 
-1. Enhance Model Accuracy: Integrate additional features such as graduate employability rates and alumni reviews.
+1. Enhance Model Accuracy: Integrate supervised learning based on real-world input and student preferences.
 2. Expand Dataset: Incorporate data from international universities to broaden the system's reach.
 3. Real-Time Interaction: Enable students to tweak input preferences dynamically and view updated recommendations.
 4. Deployment: Develop a web or mobile app for real-world use, focusing on seamless UI/UX.
