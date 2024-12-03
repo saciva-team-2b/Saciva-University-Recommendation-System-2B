@@ -94,6 +94,8 @@ The system receives a student profile as input, vectorizes it, and computes the 
 
 In the google drive account which you would like to run the notebook, put the datasets under a folder called `datasets` in the root folder. Then download either the notebook without "Modeling" in the name if you would like to tweak the final dataset or analyze our data preparation, otherwise, download the "Modeling" notebook and tweak the student_input variables to achieve to play around with it.
 
+Download the sample datasets [here](https://drive.google.com/drive/folders/1fPrULK5JixaqhECibIUgCc8IMiw-2zFi?usp=sharing) or linked above at the top of this `README`.
+
 ## Usage
 
 - Load the dataset and model using the Saciva_University_Recommendation_System_2B_Modeling.ipynb.
